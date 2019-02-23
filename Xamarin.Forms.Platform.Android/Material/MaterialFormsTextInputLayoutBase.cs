@@ -4,8 +4,6 @@ using Android.Content;
 using Android.Support.Design.Widget;
 using Android.Runtime;
 using Android.Util;
-using Android.Views;
-using Android.Graphics;
 using Android.Support.V4.View;
 using Android.Content.Res;
 
@@ -25,27 +23,18 @@ namespace Xamarin.Forms.Platform.Android.Material
 
 		public MaterialFormsTextInputLayoutBase(Context context) : base(context)
 		{
-			Init();
 		}
 
 		public MaterialFormsTextInputLayoutBase(Context context, IAttributeSet attrs) : base(context, attrs)
 		{
-			Init();
 		}
 
 		public MaterialFormsTextInputLayoutBase(Context context, IAttributeSet attrs, int defStyleAttr) : base(context, attrs, defStyleAttr)
 		{
-			Init();
 		}
 
 		protected MaterialFormsTextInputLayoutBase(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
 		{
-			Init();
-		}
-
-		void Init()
-		{
-				
 		}
 
 		void ResetTextColors(Color formsTextColor, Color formsPlaceHolderColor)

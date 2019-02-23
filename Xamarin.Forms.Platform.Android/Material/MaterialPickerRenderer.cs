@@ -1,7 +1,5 @@
 #if __ANDROID_28__
-using System.ComponentModel;
 using Android.Content;
-using Android.Support.V4.View;
 using Android.Views;
 using Android.Widget;
 using Xamarin.Forms;
@@ -41,15 +39,15 @@ namespace Xamarin.Forms.Platform.Android.Material
 			_textInputLayout.BoxBackgroundColor = MaterialColors.CreateEntryFilledInputBackgroundColor(Element.BackgroundColor, Element.TextColor);
 		}
 
-		protected internal override void UpdatePlaceHolderText()
+		protected override void UpdatePlaceHolderText()
 		{
 			_textInputLayout.SetHint(string.Empty, Element);
 		}
 
-		protected internal override void UpdateTitleColor() => ApplyTheme();
+		protected override void UpdateTitleColor() => ApplyTheme();
 		protected override void UpdateTextColor() => ApplyTheme();
 
-		void ApplyTheme() => _textInputLayout?.ApplyTheme(Element.TextColor, Color.Default);
+		protected virtual void ApplyTheme() => _textInputLayout?.ApplyTheme(Element.TextColor, Color.Default);
 	}
 }
 #endif

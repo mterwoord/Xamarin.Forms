@@ -202,7 +202,7 @@ namespace Xamarin.Forms.Platform.Android
 				ElementController.SendCompleted();
 		}
 
-		protected internal virtual void UpdateFont()
+		protected virtual void UpdateFont()
 		{
 			EditText.Typeface = Element.ToTypeface();
 			EditText.SetTextSize(ComplexUnitType.Sp, (float)Element.FontSize);
@@ -248,7 +248,7 @@ namespace Xamarin.Forms.Platform.Android
 
 		abstract protected void UpdateTextColor();
 
-		internal protected virtual void UpdatePlaceholderText()
+		protected virtual void UpdatePlaceholderText()
 		{
 			if (EditText.Hint == Element.Placeholder)
 				return;

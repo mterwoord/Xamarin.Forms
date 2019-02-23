@@ -1,7 +1,5 @@
 ﻿#if __ANDROID_28__
 using Android.Content;
-using Android.OS;
-using Android.Support.V4.View;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
@@ -11,7 +9,7 @@ using Xamarin.Forms.Platform.Android.Material;
 [assembly: ExportRenderer(typeof(Xamarin.Forms.Editor), typeof(MaterialEditorRenderer), new[] { typeof(VisualRendererMarker.Material) })]
 namespace Xamarin.Forms.Platform.Android.Material
 {
-	public sealed class MaterialEditorRenderer : EditorRendererBase<MaterialFormsTextInputLayout>
+	public class MaterialEditorRenderer : EditorRendererBase<MaterialFormsTextInputLayout>
 	{
 		bool _disposed;
 		MaterialFormsEditText _textInputEditText;
@@ -22,8 +20,6 @@ namespace Xamarin.Forms.Platform.Android.Material
 		{
 			
 		}
-
-		IElementController ElementController => Element as IElementController;
 
 		protected override EditText EditText => _textInputEditText;
 
@@ -54,7 +50,7 @@ namespace Xamarin.Forms.Platform.Android.Material
 			_textInputLayout.BoxBackgroundColor = MaterialColors.CreateEntryFilledInputBackgroundColor(Element.BackgroundColor, Element.TextColor);
 		}
 
-		protected internal override void UpdatePlaceholderText()
+		protected override void UpdatePlaceholderText()
 		{
 			if (_disposed || _textInputLayout == null)
 				return;
@@ -64,9 +60,9 @@ namespace Xamarin.Forms.Platform.Android.Material
 
 		
 		protected override void UpdatePlaceholderColor() => ApplyTheme();
-		void ApplyTheme() => _textInputLayout?.ApplyTheme(Element.TextColor, Element.PlaceholderColor);
+		protected virtual void ApplyTheme() => _textInputLayout?.ApplyTheme(Element.TextColor, Element.PlaceholderColor);
 
-		protected internal override void UpdateFont()
+		protected override void UpdateFont()
 		{
 			if (_disposed || _textInputLayout == null)
 				return;
