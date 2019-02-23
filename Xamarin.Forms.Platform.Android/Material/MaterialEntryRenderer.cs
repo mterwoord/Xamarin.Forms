@@ -19,7 +19,7 @@ namespace Xamarin.Forms.Platform.Android.Material
 		public MaterialEntryRenderer(Context context) :
 			base(MaterialContextThemeWrapper.Create(context))
 		{
-			VisualElement.VerifyVisualFlagEnabled();
+			
 		}
 
 		IElementController ElementController => Element as IElementController;

@@ -26,7 +26,7 @@ namespace Xamarin.Forms.Platform.iOS.Material
 
 		public MaterialButtonRenderer()
 		{
-			VisualElement.VerifyVisualFlagEnabled();
+			
 
 			_buttonLayoutManager = new ButtonLayoutManager(this,
 				preserveInitialPadding: true,

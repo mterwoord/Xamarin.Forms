@@ -50,7 +50,7 @@ namespace Xamarin.Forms.Platform.Android.Material
 		public MaterialButtonRenderer(Context context)
 			: base(new ContextThemeWrapper(context, Resource.Style.XamarinFormsMaterialTheme))
 		{
-			VisualElement.VerifyVisualFlagEnabled();
+			
 
 			_automationPropertiesProvider = new AutomationPropertiesProvider(this);
 			_buttonLayoutManager = new ButtonLayoutManager(this,

@@ -25,7 +25,7 @@ namespace Xamarin.Forms.Platform.iOS.Material
 
 		public MaterialFrameRenderer()
 		{
-			VisualElement.VerifyVisualFlagEnabled();
+			
 		}
 
 		public Frame Element { get; private set; }

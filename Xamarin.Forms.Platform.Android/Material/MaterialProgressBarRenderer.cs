@@ -35,7 +35,7 @@ namespace Xamarin.Forms.Platform.Android.Material
 		public MaterialProgressBarRenderer(Context context)
 			: base(new ContextThemeWrapper(context, Resource.Style.XamarinFormsMaterialProgressBarHorizontal), null, Resource.Style.XamarinFormsMaterialProgressBarHorizontal)
 		{
-			VisualElement.VerifyVisualFlagEnabled();
+			
 
 			Indeterminate = false;
 			Max = MaximumValue;

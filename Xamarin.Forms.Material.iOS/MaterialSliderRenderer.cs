@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Platform.iOS.Material
 
 		public MaterialSliderRenderer()
 		{
-			VisualElement.VerifyVisualFlagEnabled();
+			
 		}
 
 		protected override void Dispose(bool disposing)

@@ -41,7 +41,7 @@ namespace Xamarin.Forms.Platform.Android.Material
 		public MaterialFrameRenderer(Context context)
 			: base(new ContextThemeWrapper(context, Resource.Style.XamarinFormsMaterialTheme))
 		{
-			VisualElement.VerifyVisualFlagEnabled();
+			
 
 			_gestureManager = new GestureManager(this);
 			_effectControlProvider = new EffectControlProvider(this);

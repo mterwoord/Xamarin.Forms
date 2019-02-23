@@ -38,7 +38,7 @@ namespace Xamarin.Forms.Platform.Android.Material
 		public MaterialActivityIndicatorRenderer(Context context)
 			: base(context)
 		{
-			VisualElement.VerifyVisualFlagEnabled();
+			
 
 			_control = new AProgressBar(new ContextThemeWrapper(context, Resource.Style.XamarinFormsMaterialProgressBarCircular), null, Resource.Style.XamarinFormsMaterialProgressBarCircular);
 			_control.Indeterminate = true;

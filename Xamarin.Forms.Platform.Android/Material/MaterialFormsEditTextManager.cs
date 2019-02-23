@@ -19,7 +19,7 @@ namespace Xamarin.Forms.Platform.Android.Material
 
 		public static void Init(TextInputEditText textInputEditText)
 		{
-			VisualElement.VerifyVisualFlagEnabled();
+			
 
 			textInputEditText.TextChanged += OnTextChanged;
 			textInputEditText.FocusChange += OnFocusChanged;

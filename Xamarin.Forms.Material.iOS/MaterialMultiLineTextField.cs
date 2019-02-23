@@ -19,7 +19,7 @@ namespace Xamarin.Forms.Platform.iOS.Material
 
 		public MaterialMultilineTextField(IMaterialEntryRenderer element, IFontElement fontElement)
 		{
-			VisualElement.VerifyVisualFlagEnabled();
+			
 			MaterialTextManager.Init(element, this, fontElement);
 			ExpandsOnOverflow = false;
 		}

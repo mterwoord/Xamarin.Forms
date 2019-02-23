@@ -31,7 +31,7 @@ namespace Xamarin.Forms.Platform.iOS.Material
 
 		public MaterialTextField(IMaterialEntryRenderer element, IFontElement fontElement)
 		{
-			VisualElement.VerifyVisualFlagEnabled();
+			
 			MaterialTextManager.Init(element, this, fontElement);
 		}
 

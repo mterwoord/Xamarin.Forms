@@ -7,7 +7,7 @@ namespace Xamarin.Forms.Platform.iOS.Material
 	{
 		public MaterialPickerRenderer()
 		{
-			VisualElement.VerifyVisualFlagEnabled();
+			
 		}
 
 		protected override MaterialTextField CreateNativeControl()

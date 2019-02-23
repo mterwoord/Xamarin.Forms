@@ -8,7 +8,7 @@ namespace Xamarin.Forms.Platform.iOS.Material
 
 		public MaterialEntryRenderer()
 		{
-			VisualElement.VerifyVisualFlagEnabled();
+			
 		}
 
 		protected override MaterialTextField CreateNativeControl()

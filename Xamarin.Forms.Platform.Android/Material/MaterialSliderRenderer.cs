@@ -39,7 +39,7 @@ namespace Xamarin.Forms.Platform.Android.Material
 		public MaterialSliderRenderer(Context context)
 			: base(new ContextThemeWrapper(context, Resource.Style.XamarinFormsMaterialSlider), null, Resource.Style.XamarinFormsMaterialSlider)
 		{
-			VisualElement.VerifyVisualFlagEnabled();
+			
 
 			SetOnSeekBarChangeListener(this);
 			Max = (int)MaximumValue;

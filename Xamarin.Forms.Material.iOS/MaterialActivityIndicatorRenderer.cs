@@ -19,7 +19,7 @@ namespace Xamarin.Forms.Platform.iOS.Material
 
 		public MaterialActivityIndicatorRenderer()
 		{
-			VisualElement.VerifyVisualFlagEnabled();
+			
 		}
 
 		protected override void OnElementChanged(ElementChangedEventArgs<ActivityIndicator> e)

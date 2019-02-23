@@ -45,7 +45,7 @@ namespace Xamarin.Forms.Platform.Android.Material
 
 		void Init()
 		{
-			VisualElement.VerifyVisualFlagEnabled();	
+				
 		}
 
 		void ResetTextColors(Color formsTextColor, Color formsPlaceHolderColor)
